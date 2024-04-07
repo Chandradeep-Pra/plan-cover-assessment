@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; 
+}
+.btn.btn-custom {
+    background-color: #E7435F; 
+    color: white;
+}
+
+span{
+    color: #E7435F;
+}
+#logo{
+    width:30px;
+    height: 30px;
+}
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+#hero{
+    position:static;
+    background-color: #15283A;
+    color: #fff;
+    padding-top: 5%;
+    
+}
+
+.img-small{
+    transform: scale(0.45);
+    margin-top: -40%;
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+.content{
+    margin-top: 22%;
+    
+}
+.title{
+    font-size: 2rem;
+    font-weight: 600;
+    
+}
+.desc{
+    font-size: 0.7rem;
+}
+#hero {
+    position: relative;
+    overflow: hidden;
+}
+
+#hero:before,
+#hero:after {
+    content: '';
+    position: absolute;
+    width: 144%;
+    height: 117%;
+    border-radius: 99%;
+    background-color: #fff;
+    left: -20%;/* Set the background color to match the container */
+}
+
+#hero:before {
+    top: 452px; /* Adjust the value to control the concave effect at the top */
+}
+
+#hero:after {
+    bottom: 742px; /* Adjust the value to control the concave effect at the bottom */
+    z-index: 1; /* Ensure the bottom curve is behind the image */
+}
+
+#hero img {
+    position: relative;
+    z-index: 2; /* Ensure the image is on top of the bottom curve */
+}
+
+
+#stats .stat-box{
+    margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.stat-box {
+    text-align: center; /* Center align the content */
+    padding: 20px;
+    border: 1px solid #ccc; /* Add border around each stat box */
+}
+
+.stat-box i {
+    font-size: 48px; /* Adjust the icon size as needed */
+}
+
+.stat-box p {
+    margin-top: 10px; /* Add space between the icon and text */
+}
+
+.number {
+    font-size: 18px; /* Adjust the number font size */
+}
+
+#stats .stat-box {
+    margin-bottom: 20px; /* Add spacing between stat-box elements */
+}
+
+#about-app {
+    text-align: center; /* Center align the content inside about-app div */
+}
+
+#about-app .stat-box {
+    margin-bottom: 20px; /* Add spacing between stat-box elements inside about-app div */
+}
+
+.title-abt-app {
+    position: relative;
+}
+
+.title-abt-app::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Adjust the distance of the underline from the text */
+    left: 49%;
+    width: 40px; /* Adjust the width of the underline */
+    height: 2px; /* Adjust the height/thickness of the underline */
+    background-color: red; /* Set the color of the underline */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+    gap: 20px; /* Spacing between grid items */
+}
+
+.grid-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.grid-item h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.grid-item p {
+    font-size: 14px;
+}
+
+#how-it-works{
+    background-color: #F5F5FB;
+    position: relative;
+    /* border: 2px solid red; */
+    margin-bottom: 0%;
+    /* padding: 20px; */
+}
+
+#how-it-works::before,
+#how-it-works:after {
+    content: '';
+    position: absolute;
+    background-color: #E7435F;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#how-it-works::before {
+    width: 600px;
+    height: 600px;
+    bottom: -10%;
+    left: -10%;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+}
+
+#how-it-works:after {
+    bottom: 80%;
+    left: 90%;
+    clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0 100%);
+    overflow: hidden;
+}
