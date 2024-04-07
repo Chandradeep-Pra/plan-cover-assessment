@@ -4,4 +4,4 @@
 ```javascript
     git clone https://github.com/Chandradeep-Pra/plan-cover-assessment.git
 ```
-- Open (index.html)[./index.html] file
+- Open [index.html](./index.html) file
